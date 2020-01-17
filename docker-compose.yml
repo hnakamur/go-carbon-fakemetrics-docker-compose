@@ -5,3 +5,5 @@ services:
     build: ./go-carbon
   carbon-relay-ng:
     build: ./carbon-relay-ng
+  carbonapi:
+    build: ./carbonapi
