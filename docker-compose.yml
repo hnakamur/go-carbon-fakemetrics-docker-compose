@@ -1,0 +1,7 @@
+---
+version: "3"
+services:
+  go-carbon:
+    build: ./go-carbon
+  carbon-relay-ng:
+    build: ./carbon-relay-ng
