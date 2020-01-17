@@ -1,3 +1,4 @@
+listen: "0.0.0.0:8081"
 upstreams:
     graphite09compat: false
     buckets: 10
