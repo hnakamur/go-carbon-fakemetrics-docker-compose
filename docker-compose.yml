@@ -3,6 +3,8 @@ version: "3"
 services:
   go-carbon:
     build: ./go-carbon
+    volumes:
+      - "./data/whisper:/var/lib/graphite/whisper"
   carbon-relay-ng:
     build: ./carbon-relay-ng
   carbonapi:
