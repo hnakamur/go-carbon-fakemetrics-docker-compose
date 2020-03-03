@@ -5,16 +5,5 @@ services:
     build: ./go-carbon
     volumes:
       - "./data/whisper:/var/lib/graphite/whisper"
-  carbonapi:
-    build: ./carbonapi
-  grafana:
-    image: grafana/grafana
-    env_file:
-      - grafana-variables.env
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./grafana/provisioning/:/etc/grafana/provisioning/
-      - ./grafana/dashboards/:/var/lib/grafana/dashboards/
   fakemetrics:
     build: ./fakemetrics
