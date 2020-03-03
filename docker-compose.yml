@@ -5,8 +5,6 @@ services:
     build: ./go-carbon
     volumes:
       - "./data/whisper:/var/lib/graphite/whisper"
-  carbon-relay-ng:
-    build: ./carbon-relay-ng
   carbonapi:
     build: ./carbonapi
   grafana:
