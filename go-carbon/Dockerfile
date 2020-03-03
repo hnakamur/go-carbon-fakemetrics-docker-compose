@@ -1,4 +1,4 @@
-FROM golang:1.13-buster
+FROM golang:1.14-buster
 
 RUN go get -d github.com/lomik/go-carbon \
  && cd /go/src/github.com/lomik/go-carbon \
