@@ -7,3 +7,5 @@ services:
       - "./data/whisper:/var/lib/graphite/whisper"
   fakemetrics:
     build: ./fakemetrics
+    depends_on:
+      - "go-carbon"
